@@ -8,7 +8,7 @@ import { Navbar } from './components';
 const App = () => {
   return (
     <div className='app'>
-      {/* <Navbar/> */}
+      <Navbar/>
       <Header/>
       <About/>
       <Work/>
@@ -19,5 +19,5 @@ const App = () => {
   )
 }
 
-// Time: 30:00
+// Time: 1:32:34
 export default App
