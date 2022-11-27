@@ -5,6 +5,7 @@ import { images } from "../../constants";
 import { urlFor, client } from "../../client";
 
 import "./About.scss";
+import { appWrap } from "../../wrapper";
 
 // const abouts = [
 //   {
@@ -33,7 +34,7 @@ const About = () => {
   const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "abouts"]'
+    const query = '*[_type == "abouts"]';
 
     client.fetch(query)
     .then((data)=>setAbouts(data))
@@ -64,4 +65,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default appWrap(About, 'about');
