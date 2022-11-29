@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import ReactTooltip from 'react-tooltip';
 
 import { urlFor, client } from "../../client";
-import { appWrap } from "../../wrapper";
+import { appWrap, MotionWrap } from "../../wrapper";
 
 
 import './Skills.scss'
@@ -19,7 +19,6 @@ const Skills = () => {
     client.fetch(query)
     .then((data) => {
       setExperience(data);
-      console.log(data)
     });
     
     client.fetch(skillsQuery)
@@ -99,4 +98,8 @@ const Skills = () => {
   )
 }
 
-export default appWrap(Skills, "")
+export default appWrap(
+  MotionWrap(Skills, 'app__skills'), 
+  'skills',
+  'app__whitebg'
+  );

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import "./Work.scss";
 import { urlFor, client } from "../../client";
-import { appWrap } from "../../wrapper";
+import { appWrap, MotionWrap } from "../../wrapper";
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -120,4 +120,8 @@ const Work = () => {
   );
 };
 
-export default appWrap(Work, "work");
+export default appWrap(
+  MotionWrap(Work, 'app__works'), 
+  'work',
+  'app__primarybg'
+  );
