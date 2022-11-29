@@ -5,7 +5,7 @@ import { images } from "../../constants";
 import { urlFor, client } from "../../client";
 
 import "./About.scss";
-import { appWrap } from "../../wrapper";
+import { appWrap, MotionWrap } from "../../wrapper";
 
 // const abouts = [
 //   {
@@ -65,4 +65,8 @@ const About = () => {
   );
 };
 
-export default appWrap(About, 'about');
+export default appWrap(
+  MotionWrap(About, 'app__about'), 
+  'about',
+  'app__whitebg'
+  );
