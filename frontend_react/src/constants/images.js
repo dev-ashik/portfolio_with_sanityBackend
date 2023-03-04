@@ -14,6 +14,7 @@ import node from '../assets/node.png';
 import python from '../assets/python.png';
 import react from '../assets/react.png';
 import redux from '../assets/redux.png';
+import Tailwind_CSS from '../assets/Tailwind_CSS.png';
 import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
@@ -27,6 +28,7 @@ import about04 from '../assets/about04.png';
 import profile from '../assets/profile.jpeg';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
+import wechat_qr_code from '../assets/wechat_qr_code.jpg';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -53,6 +55,7 @@ export default {
   python,
   react,
   redux,
+  Tailwind_CSS,
   sass,
   typescript,
   vue,
@@ -70,4 +73,5 @@ export default {
   nb,
   skype,
   spotify,
+  wechat_qr_code
 };
