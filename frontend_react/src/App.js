@@ -15,9 +15,6 @@ const App = () => {
       <Skills/>
       <Testimonial/>
       <Footer/>
-
-
-      <SocialMedia/>
     </div>
   )
 }
