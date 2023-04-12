@@ -100,10 +100,15 @@
   .app__social {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: end;
     flex-direction: column;
-  
     padding: 1rem;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+
   
     div {
       width: 40px;
