@@ -25,7 +25,7 @@ import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
 // import profile from '../assets/profile2.png';
-import profile from '../assets/profile.jpeg';
+import profile_2 from '../assets/profile_2.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 import wechat_qr_code from '../assets/wechat_qr_code.jpg';
@@ -63,7 +63,7 @@ export default {
   about02,
   about03,
   about04,
-  profile,
+  profile_2,
   circle,
   logo,
   adidas,

@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import { appWrap }
 import "./Header.scss";
 import { images } from "../../constants";
 import { appWrap } from "../../wrapper";
@@ -29,7 +28,7 @@ const Header = () => {
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text"> hello, I am</p>
-              <h1 className="head-text">Ashik</h1>
+              <h1 className="head-text">ASHIK</h1>
             </div>
           </div>
 
@@ -45,7 +44,7 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <img src={images.profile} alt="profile_bg" />
+        <img src={images.profile_2} alt="profile_bg" />
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -62,7 +61,7 @@ const Header = () => {
         className="app__header-circles"
       >
         {[images.react, images.redux, images.Tailwind_CSS].map((circle, index) => (
-          <div className="circle-cmpp app__flex" key={`circle-${index}`}>
+          <div className="circle-cmpp app__flex" key={`circle-${index}`} >
             <img src={circle} alt="circle" />
           </div>
         ))}
